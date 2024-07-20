@@ -132,3 +132,15 @@
     line-height: calc(1.4em * (1 + (1 - 1.4)/25));
   }
 }
+
+.replace-title > .description, .replace-title > .title-with-hover {
+  @apply hidden
+}
+
+.replace-title:hover > .description, .replace-title:hover > .title-with-hover {
+  @apply block
+}
+
+.replace-title:hover > .title-without-hover {
+  @apply hidden
+}

@@ -1,22 +1,137 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p>Since 2011, Red Swan Ventures has worked with <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\">magnetic</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\">authentic</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"\">tenacious</a>, and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\">evolving </a>founders to build great companies. 💫</p>",
+      "cta": []
+    },
+    {
+      "__resolveType": "site/sections/TruthTellers.tsx",
+      "title": "<h1 style=\"text-align: start\">We believe the best entrepreneurs seek <span style=\"color: rgb(57, 57, 57)\">truth tellers</span>. Humans who tell them not what they want to hear,<span>but what they <span class=\"circle-sketch-highlight\">need</span> to hear. 🎧</span></h1>"
+    },
+    {
+      "__resolveType": "site/sections/WhoWeAre.tsx",
+      "description": "<h4 style=\"text-align: start\"><span style=\"color: hsl(var(--accent-hsl))\">They are built by entrepreneurs who create joy for their customers, provide meaning to their employees, and scare their shareholders by passing on premature acquisition offers.</span></h4><h4 style=\"text-align: start\"><span style=\"color: hsl(var(--accent-hsl))\">They are movements as much as businesses, and we are honored to be a part of them.</span></h4>",
+      "title": "<h2 style=\"text-align: start\"><span style=\"color: hsl(var(--accent-hsl))\">If Black Swans are unforeseen calamitous events, Red Swans are great companies most of us never saw coming. </span>🔮</h2>",
+      "subtitle": "<h3 style=\"text-align: start\"><span style=\"color: hsl(var(--black-hsl))\">Our Approach</span></h3><p style=\"text-align: start\"><span style=\"color: hsl(var(--darkAccent-hsl))\">We aspire to be the entrepreneur’s first institutional investor, helping to craft the right mix of funds and individual investors for the round. Our check sizes range from $500,000 at Pre-Seed to $1 million at Seed, with reserves for later rounds.</span></p><p style=\"text-align: start\"><span style=\"color: hsl(var(--darkAccent-hsl))\">We’re open-minded across industries but actively seek out businesses that create their own internal momentum via flywheel effects, network effects, and product-led growth.</span></p>"
+    },
+    {
+      "__resolveType": "site/sections/OurFamily.tsx",
+      "title": "Our Family",
+      "cta": {
+        "text": "SEE ALL",
+        "link": "/portfolio-1"
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "Footer"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      "cards": [
+        {
+          "title": "BRIGHTWHEEL",
+          "description": "ALL-IN-ONE CHILDCARE MANAGEMENT",
+          "link": "https://mybrightwheel.com/",
+          "titleHover": "BRIGHTWHEEL",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/3d405fd6-e3bd-4c60-84cd-3994e7cb8f76"
+        },
+        {
+          "description": "VERTICAL FARMING & AGRICULTURE",
+          "title": "BOWERY",
+          "titleHover": "BOWERY FARMING",
+          "link": "https://bowery.co/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/7f29c91f-51fd-443a-ba7d-d6d17608747b"
+        },
+        {
+          "description": "THE FUTURE OF MONEY",
+          "title": "COINBASE",
+          "titleHover": "COINBASE",
+          "link": "https://www.coinbase.com/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/6b6bb308-7b07-4007-8200-b62aeff61629"
+        },
+        {
+          "description": "CREATE UNIVERSAL NATIVE APPS",
+          "titleHover": "EXPO",
+          "title": "EXPO",
+          "link": "https://expo.dev/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/f53b73e4-1937-4876-8331-995d56ef550c"
+        },
+        {
+          "description": "RETIREMENT FOR SMALL BUSINESS",
+          "title": " GUIDELINE",
+          "titleHover": "GUIDELINE",
+          "link": "https://www.guideline.com/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/1c136025-4376-4130-a9fa-c1f6d376badd"
+        },
+        {
+          "description": "QUALITY MEN'S GROOMING",
+          "title": "HARRY'S",
+          "titleHover": "HARRY'S",
+          "link": "https://www.harrys.com/en/us",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/16a73609-8f58-4c2d-a085-0f56f8fdaab6"
+        },
+        {
+          "description": "SIMPLE, SECURE IDENTITY VERIFICATION",
+          "titleHover": "ID.ME",
+          "link": "https://www.id.me/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/ee830e99-6383-4318-9d7e-07f7494ab51a"
+        },
+        {
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/6e710ca8-e764-4c26-8c7b-f6445b5162e8",
+          "description": "MODERN INVESTMENT MANAGEMENT",
+          "titleHover": "JUNIPER SQUARE",
+          "link": "https://www.junipersquare.com/"
+        },
+        {
+          "description": "VIRTUAL TOUR SOFTWARE",
+          "titleHover": "MATTERPORT",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/f1e6782e-8886-4394-a365-6bf6db0f6594",
+          "link": "https://matterport.com/"
+        },
+        {
+          "description": "HEALTH INSURANCE THAT MAKES SENSE",
+          "titleHover": "OSCAR",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/9d5ce286-d3e8-4404-a79b-a79718202b3a",
+          "link": "https://www.hioscar.com/"
+        },
+        {
+          "description": "INTERACTIVE ENTERTAINMENT & GAMING",
+          "titleHover": "SCOPELY",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/b77e399e-b9bb-4d00-981f-f19b44de48b1",
+          "link": "https://www.scopely.com/"
+        },
+        {
+          "description": "DISCOVER EVENTS YOU LOVE",
+          "titleHover": "SEATGEEK",
+          "link": "https://seatgeek.com/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/52a6e626-0c17-4d3b-a368-8b03f2675475"
+        },
+        {
+          "description": "DIGITAL MORTGAGE CLOSINGS",
+          "titleHover": "SNAPDOCS",
+          "link": "https://www.snapdocs.com/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/1da8606c-f418-4328-8c31-a2caf17a3ec0"
+        },
+        {
+          "description": "CRE SOFTWARE SOLUTIONS",
+          "titleHover": "VTS",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/f8f48b62-3719-49d1-97ea-e7d1200386fb",
+          "link": "https://www.vts.com/"
+        },
+        {
+          "description": "MODERN EYEWEAR",
+          "titleHover": "WARBY PARKER",
+          "link": "https://www.warbyparker.com/",
+          "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/e40c7dd4-d4a4-4775-8c68-5a2de9edba76"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}

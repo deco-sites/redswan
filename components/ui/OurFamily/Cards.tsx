@@ -6,7 +6,7 @@ export interface Cards {
 
 export default function Cards({ cards }: Cards) {
   return (
-    <div>
+    <div class="grid grid-cols-4">
       { cards.map((item, index: number) => <Card index={index} {...item} />) }
     </div>
   )

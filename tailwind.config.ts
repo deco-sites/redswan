@@ -18,7 +18,7 @@ export default {
         '--background-our-family': '#393939',
         '--text-our-family': '#FFF',
         '--background-card-our-family': '#FFF',
-        '--background-hover-card-our-familu': '#E15545',
+        '--background-hover-card-our-family': '#E15545',
         '--title-card-our-family': '#393939',
         '--description-card-our-family': '#FFF'
       }

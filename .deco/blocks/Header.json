@@ -1,1 +1,25 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Our Family",
+        "url": "/home#OurFamily"
+      },
+      {
+        "label": "Team",
+        "url": "/home#Team"
+      },
+      {
+        "label": "Get in Touch",
+        "url": "/home#GetInTouch"
+      }
+    ],
+    "buttons": []
+  },
+  "children": {},
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/4f239093-fca3-48ae-8828-c0a17b2fe95a",
+    "alt": "Logo redswan"
+  }
+}

@@ -1,8 +1,22 @@
 import TextFade from "site/islands/TextFade.tsx";
 
 export interface WhoWeAreProps {
+  /**
+   * @format rich-text
+   * @default Click here to tweak this text however you want.
+   */
   title: string,
+
+  /**
+   * @format rich-text
+   * @default Click here to tweak this text however you want.
+   */
   subtitle: string,
+
+  /**
+   * @format rich-text
+   * @default Click here to tweak this text however you want.
+   */
   description: string,
 }
 
