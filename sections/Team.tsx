@@ -10,6 +10,11 @@ export type IFollowing = {
 }
 
 export type IPeople = {
+  /**
+   * @format rich-text
+   * @default Click here to tweak this text however you want.
+  */
+  infoExtra?: string
   name: string,
   role: string
   following: IFollowing[]
@@ -17,12 +22,6 @@ export type IPeople = {
     src: ImageWidget,
     alt: string
   }
-
-  /**
-   * @format rich-text
-   * @default Click here to tweak this text however you want.
-   */
-  infoExtra: string
 }
 export interface TeamProps {
   title: string,

@@ -127,7 +127,95 @@
       ]
     },
     {
-      "__resolveType": "Footer"
+      "__resolveType": "site/sections/Team.tsx",
+      "title": "Team",
+      "peoples": [
+        {
+          "following": [
+            {
+              "socialName": "Twitter",
+              "href": "https://x.com/dunn"
+            },
+            {
+              "href": "https://www.linkedin.com/in/andyrdunn/",
+              "socialName": "LinkedIn"
+            },
+            {
+              "href": "https://dunn.medium.com/",
+              "socialName": "Medium"
+            }
+          ],
+          "imagePeople": {
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/6457aaa5-d09f-43e6-ac77-25a0d5e578f1",
+            "alt": "Photo by Andy"
+          },
+          "name": "Andy Dunn",
+          "role": "Co-Founder & CEO at Bonobos and Pie"
+        },
+        {
+          "following": [
+            {
+              "socialName": "Twitter",
+              "href": "https://x.com/sandersoncass"
+            },
+            {
+              "href": "https://www.linkedin.com/in/sandersoncass/",
+              "socialName": "LinkedIn"
+            }
+          ],
+          "imagePeople": {
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/eaa3fa9b-40da-4fd3-ab59-543fd600b9c1",
+            "alt": "Photo by Anderson"
+          },
+          "name": "Sandy Cass",
+          "role": "COO/CFO at Artsy, VP Finance at Bonobos, Investor at D.E. Shaw, Reshape Ventures"
+        },
+        {
+          "following": [
+            {
+              "href": "https://x.com/hartley_liz",
+              "socialName": "Twitter"
+            },
+            {
+              "href": "https://www.linkedin.com/in/liz-hartley-03755/",
+              "socialName": "LinkedIn"
+            }
+          ],
+          "imagePeople": {
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/b947094c-1ce3-41c5-994f-bc15a30b4264",
+            "alt": "Photo"
+          },
+          "name": "Liz Hartley",
+          "role": "Founding Partner at WeWork Creator Fund, Strategy & Product at Apple, VP at Beats"
+        },
+        {
+          "following": [
+            {
+              "href": "https://x.com/EricMRubin",
+              "socialName": "Twitter"
+            },
+            {
+              "href": "https://www.linkedin.com/in/eric-rubin-57859154/",
+              "socialName": "LinkedIn"
+            }
+          ],
+          "imagePeople": {
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/dde17766-6086-49a3-adf2-e11646a54a35",
+            "alt": "Photo by Eric"
+          },
+          "name": "Eric Rubin",
+          "role": "Founding Team at Pie, GTM at Second Measure, Goldman Sachs"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Footer2.tsx",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/d02b5ce6-c0de-4a60-8932-d0763aeb30f7",
+        "alt": "Logo by red swan"
+      },
+      "title": "Get in Touch",
+      "email": "hi@redswanventures.com"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
