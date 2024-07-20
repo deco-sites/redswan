@@ -11,9 +11,18 @@ export interface ImageFadeProps {
   alt: string
   width?: string
   height?: string
+  class?: string
 }
 
-export default function ImageFade({ src, alt, width, height, dataSal = 'fade', dataSalDelay = '1000' }: ImageFadeProps) {
+export default function ImageFade({
+  src,
+  alt,
+  width,
+  height,
+  class: className = '',
+  dataSal = 'fade',
+  dataSalDelay = '1000',
+}: ImageFadeProps) {
   const myElementRef = useRef(null);
   const { Up } = useScrollEffects({ Up: myElementRef });
   
@@ -27,6 +36,9 @@ export default function ImageFade({ src, alt, width, height, dataSal = 'fade', d
       <img 
         src={src}
         alt={alt}
+        width={width}
+        height={height}
+        class={className}
       />
     </div>
   )

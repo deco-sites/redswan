@@ -22,8 +22,8 @@ export default function Footer2({
   email
 }: Props) {
   return (
-    <div class="bg-[--background-footer] text-[--text-footer]">
-      <div class="lg:container lg:mx-auto mx-4 flex flex-col gap-20">
+    <div class="bg-[--background-footer] text-[--text-footer] py-8">
+      <div class="lg:container lg:mx-auto mx-4 flex flex-col gap-4">
         <TextFade
           text={title}
           className=""
@@ -39,6 +39,8 @@ export default function Footer2({
             src={logo.src}
             alt={logo?.alt ?? 'Logo by redswan'}
             dataSalDelay="2000"
+            width="30"
+            height="30"
           />
         ) }
       </div>

@@ -14,12 +14,12 @@ export interface OurFamilyProps {
 
 export default function OurFamily({ cta, title, cards }: OurFamilyProps) {
   return (
-    <section class="bg-[--background-our-family] text-[--text-our-family]">
-      <div class="lg:container lg:mx-auto mx-4 flex flex-col">
+    <section class="bg-[--background-our-family] text-[--text-our-family] py-[5vmax]">
+      <div class="lg:container lg:mx-auto mx-4 flex flex-col gap-4">
         <TextFade text={title} className="" dataSalDelay="1000"  />
         <ButtonFade text={cta?.text} link={cta?.link} class="" dataSalDelay="1000" />
       </div>
-      <div>
+      <div class="lg:container lg:mx-auto mx-4 pt-6">
         <Cards cards={cards} />
       </div>
     </section>

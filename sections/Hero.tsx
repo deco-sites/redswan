@@ -36,7 +36,7 @@ export default function HeroFlats({
   cta = [],
 }: Props) {
   return (
-    <div class="bg-[--background-hero]">
+    <div class="bg-[--background-hero] py-[10vmax]">
       <nav class="lg:container lg:mx-auto mx-4 tweak-global-animations-animation-type-flex">
       <div class="flex flex-col items-center gap-8 showInDisplay-transition">
         <div

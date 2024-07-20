@@ -28,13 +28,17 @@ export default function Card({ logo, description, link, title = '', titleHover, 
       ref={Up}
       data-sal={dataSal}
       data-sal-delay={parseFloat(dataSalDelay) * index}
-      class="bg-[--background-card-our-family] hover:bg-[--background-hover-card-our-family] hover:replace-title"
+      class="bg-[--background-card-our-family] hover:bg-[--background-hover-card-our-family] replace-title flex flex-col gap-2 items-center justify-center"
     >
       { logo 
       ? <img src={logo} alt={`logo empresa ${link}`} class="title-without-hover" />
       : <h2 class="title-without-hover text-[--title-card-our-family]">{title}</h2>
       }
-      <p class="description text-[--description-card-our-family]">{description}</p>
+      <p 
+        class="description text-[--description-card-our-family] text-[2rem] text-center leading-[16px]"
+      >
+        {description}
+      </p>
       <h2 class="title-with-hover text-[--title-card-our-family]">{titleHover}</h2>
     </div>
   )
