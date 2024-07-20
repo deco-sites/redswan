@@ -1,8 +1,8 @@
-import useScrollEffects from "deco-sites/start/hooks/useScrollEffects.tsx";
+import useScrollEffects from "../../hooks/useScrollEffects.tsx";
 import { useRef } from "preact/hooks";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
-import useBackToTop from "deco-sites/start/hooks/useBackToTop.tsx";
+import useBackToTop from "../../hooks/useBackToTop.tsx";
 
 export interface IntersectionProps {
   /** @description option available for animation effect: fade or slide-up */

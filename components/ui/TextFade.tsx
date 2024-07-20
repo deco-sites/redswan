@@ -1,6 +1,6 @@
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
-import { useRef } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
+import { useRef } from "preact/hooks";
 import useScrollEffects from "site/hooks/useScrollEffects.tsx";
 
 export interface TextFadeProps {
