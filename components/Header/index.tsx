@@ -1,6 +1,7 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../ui/Icon.tsx";
+import { JSX } from "preact/jsx-runtime";
 
 export interface HeaderProps {
   logo?: {
@@ -13,7 +14,7 @@ export interface HeaderProps {
       url?: string;
     }[];
   };
-  children: any
+  children: JSX.Element
 }
 
 export default function Header({
