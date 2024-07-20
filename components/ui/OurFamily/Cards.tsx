@@ -7,7 +7,7 @@ export interface Cards {
 export default function Cards({ cards }: Cards) {
   return (
     <div>
-      { cards.map((item) => <Card {...item} />) }
+      { cards.map((item, index: number) => <Card {...item, index} />) }
     </div>
   )
 }

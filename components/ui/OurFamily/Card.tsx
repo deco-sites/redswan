@@ -1,9 +1,17 @@
 export type ICard = {
-  text: string
+  title: string,
+  description: string,
+  link: string,
 }
 
-export default function Card({}: ICard) {
+export interface CardProps extends ICard {
+  index: number
+}
+
+export default function Card({ description, link, title, index }: CardProps) {
   return (
-    <div>Card</div>
+    <div class="">
+
+    </div>
   )
 }
