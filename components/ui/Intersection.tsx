@@ -22,8 +22,7 @@ export default function Intersection({ dataSal, dataSalDelay, card }: Intersecti
   const { Up } = useScrollEffects({ Up: myElementRef });
 
   // Evento que faz com que o elemento apareça na tela somente com uma condição
-  const percentageToAppear = 0.3;
-  const isVisible = useBackToTop(percentageToAppear);
+  const isVisible = useBackToTop('');
 
   return (
     <div>

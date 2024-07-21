@@ -31,8 +31,10 @@ export interface TeamProps {
 export default function Team({ peoples, title }: TeamProps) {
   return (
     <section class="bg-[#FFF] py-[5vmax]">
-      <div class="w-full lg:container lg:mx-auto mx-4 flex flex-col">
-        <TextFade text={title} className="font-size-responsive-title" dataSalDelay="2000" />
+      <div class="w-full 2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col"
+        data-testid={'TeamSection'}
+      >
+        <TextFade text={title} className="font-size-responsive-title text-[--text-red-team]" dataSalDelay="2000" />
         <div class='flex gap-4 flex-wrap'>
           { peoples.map(({ imagePeople, following, infoExtra, name, role }, index) => (
             <div class="flex flex-col gap-4 items-center justify-center">
@@ -42,7 +44,8 @@ export default function Team({ peoples, title }: TeamProps) {
                 dataSalDelay={`${2000 + (60 * index)}`}
                 class="px-4 pb-4 rounded-full"
               />
-              <TextFade text={role} className="text-[--text-dark-team] font-size-responsive-subtitle" />
+              <TextFade text={name} className="text-[--text-red-team] font-size-responsive-subtitle max-w-[150px]" />
+              <TextFade text={role} className="text-[--text-dark-team] font-size-responsive-body max-w-[150px]" />
               <div class="flex gap-2">
                 { following.map(({ href, socialName }, indexFollowing) => (
                   <>
@@ -52,7 +55,7 @@ export default function Team({ peoples, title }: TeamProps) {
                       link={href}
                       dataSalDelay={`${2000 + (60 * index)}`}
                     />
-                    { indexFollowing > 0 && indexFollowing < following.length -1 ? (
+                    { indexFollowing < following.length -1 ? (
                       <span class="text-[--text-dark-team]">{' . '}</span> 
                     ) : null }
                   </>

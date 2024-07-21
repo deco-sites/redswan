@@ -22,13 +22,15 @@ export interface WhoWeAreProps {
 
 export default function WhoWeAre({ description, subtitle, title }: WhoWeAreProps) {
   return (
-    <section class="bg-[--background-section-truth-tellers] text-[--text-truth-tellers] py-[10vmax]">
-      <div class="flex flex-col md:flex-row justify-between gap-4 lg:container lg:mx-auto mx-4">
-        <div class="flex flex-col gap-2">
+    <section class="bg-[--background-who-we-are] py-[10vmax]">
+      <div class="flex flex-col md:flex-row justify-between gap-4 2xl:container 2xl:mx-auto mx-4 lg:px-[3vw]">
+        <div class="flex flex-col gap-2 text-[--text-title-who-we-are]"
+          data-testid={'WhoWeAreSection'}
+        >
           <TextFade text={title} className="font-size-responsive-title" dataSalDelay="2000" />
           <TextFade text={description} className="font-size-responsive-description" dataSalDelay="2000" />
         </div>
-        <div>
+        <div class="text-[--text-description-who-we-are]">
           <TextFade text={subtitle} className="font-size-responsive-subtitle" dataSalDelay="2000" />
         </div>
       </div>

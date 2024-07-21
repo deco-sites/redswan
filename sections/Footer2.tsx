@@ -23,7 +23,7 @@ export default function Footer2({
 }: Props) {
   return (
     <div class="bg-[--background-footer] text-[--text-footer] py-8">
-      <div class="lg:container lg:mx-auto mx-4 flex flex-col gap-4">
+      <div class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col gap-4">
         <TextFade
           text={title}
           className=""

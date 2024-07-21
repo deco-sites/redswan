@@ -33,12 +33,12 @@ export default function Header({
   children
 }: HeaderProps) {
   return (
-    <header class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] lg:container lg:mx-auto mx-4">
+    <header class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] fixed w-full z-30">
       {children}
-      <div class="flex justify-between">
+      <div class="flex justify-between 2xl:container 2xl:mx-auto mx-4 py-8 lg:px-[3vw]">
         <div class="showInDisplay-transition">
           <a href="/" data-event='no effect'>
-            <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+            <Image src={logo.src || ""} width={154} height={44} alt={logo.alt} />
           </a>
         </div>
         <div class="drawer drawer-end md:hidden">
@@ -84,7 +84,7 @@ export default function Header({
             </div>
           </aside>
         </div>
-        <div class="hidden items-center justify-between md:flex w-full">
+        <div class="hidden items-center justify-between md:flex">
           <ul class="flex">
             {navigation.links.map((link) => (
               <li>

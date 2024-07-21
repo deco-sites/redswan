@@ -32,6 +32,51 @@ export default defineApp(async (_req, ctx) => {
 
       {/* Rest of Preact tree */}
       <ctx.Component />
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            @font-face {
+              font-family: 'tablet-gothic';
+              src: url(${asset('/fonts/tablet-gothic3.woff')}) format('woff');
+              font-style: normal;
+              font-weight: 400;
+              font-display: swap;
+            };
+            @font-face {
+              font-family: 'tablet-gothic';
+              src: url(${asset('/fonts/tablet-gothic2.woff')}) format('woff');
+              font-style: normal;
+              font-weight: 600;
+              font-display: swap;
+            };
+            @font-face {
+              font-family: 'tablet-gothic';
+              src: url(${asset('/fonts/tablet-gothic.woff')}) format('woff'), url(${asset('/fonts/tablet-gothic2.woff')}) format('woff');
+              font-style: normal;
+              font-weight: 700;
+              font-display: swap;
+            };
+
+
+            @font-face {
+              font-family: 'tablet-gothic-condensed';
+              font-style: normal;
+              font-weight: 400, 600, 700;
+              font-display: swap;
+              src: url(${asset("/fonts/tablet-gothic-condensed2.woff")}) format('woff');
+            };
+
+            @font-face {
+              font-family: 'tablet-gothic-condensed';
+              font-style: normal;
+              font-weight: 800;
+              font-display: swap;
+              src: url(${asset("/fonts/tablet-gothic-condensed.woff")}) format('woff');
+            };
+          `
+        }}
+      />
     </>
   );
 });

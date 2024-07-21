@@ -19,12 +19,15 @@ export default function TextFade({ text, className = '', dataSal = 'fade', dataS
   const { Up } = useScrollEffects({ Up: myElementRef });
 
   return (
-    <HTMLRenderer
+    <div
       ref={Up}
-      data-sal={dataSal}
-      data-sal-delay={dataSalDelay}
-      html={text}
-      class={className}
-    />
+    >
+      <HTMLRenderer
+        data-sal={dataSal}
+        data-sal-delay={dataSalDelay}
+        html={text}
+        class={className}
+      />
+    </div>
   )
 }

@@ -5,7 +5,7 @@ export default {
   daisyui: { themes: [
     {
       'light': {
-        '--background-header': '#FFF',
+        '--background-header': '#F3F3F3',
         '--text-header': '#393939',
         '--background-hero': '#393939',
         '--text-hero': '#FFF',

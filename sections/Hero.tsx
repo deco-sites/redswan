@@ -37,7 +37,7 @@ export default function HeroFlats({
 }: Props) {
   return (
     <div class="bg-[--background-hero] py-[10vmax]">
-      <nav class="lg:container lg:mx-auto mx-4 tweak-global-animations-animation-type-flex">
+      <nav class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] tweak-global-animations-animation-type-flex">
       <div class="flex flex-col items-center gap-8 showInDisplay-transition">
         <div
           class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
@@ -58,14 +58,14 @@ export default function HeroFlats({
             />
           )}
           <div
-            class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 text-[--text-hero] ${
+            class={`mx-6 lg:w-full space-y-4 gap-4 text-[--text-hero] ${
               image
                 ? "lg:w-1/2 lg:max-w-xl"
-                : "flex flex-col items-center justify-center lg:max-w-3xl"
+                : ""
             }`}
           >
             <div
-              class="inline-block lg:text-[80px] text-4xl leading-none font-medium"
+              class="inline-block font-size-responsive-title font-normal"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
