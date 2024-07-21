@@ -21,16 +21,13 @@ export interface CardProps extends ICard {
 }
 
 export default function Card({ logo, description, link, title = '', titleHover, index, dataSal = 'fade', dataSalDelay = '1000' }: CardProps) {
-  const myElementRef = useRef(null);
-  const { Up } = useScrollEffects({ Up: myElementRef });
 
   const visible = useBackToTop('OurFamilySection')
   
   return !visible ? <div /> : (
     <div
-      ref={Up}
-      data-sal={dataSal}
       data-sal-delay={parseFloat(dataSalDelay) + (60 * index)}
+      class="showInDisplay-transition"
     >
       <a
         href={link ?? '#'}
@@ -42,7 +39,7 @@ export default function Card({ logo, description, link, title = '', titleHover, 
         >
           {description}
         </p>
-        <h2 class="title-with-hover text-[--title-card-our-family] leading-[30px]">{titleHover}</h2>
+        <h2 class="title-with-hover text-[--title-card-our-family] leading-[25px]">{titleHover}</h2>
       </a>
     </div>
   )

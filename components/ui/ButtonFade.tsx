@@ -1,5 +1,6 @@
 import useScrollEffects from "site/hooks/useScrollEffects.tsx";
 import { useRef } from "preact/hooks";
+import useBackToTop from "site/hooks/useBackToTop.tsx";
 
 export type IButton = {
   /** @description option available for animation effect: fade or slide-up */
@@ -12,19 +13,26 @@ export type IButton = {
   text: string
   onClick?: () => void
   link?: string
+  tagDataTestid: string
 }
 
-export default function ButtonFade({ text,  dataSal = 'fade', dataSalDelay = '1000', link, onClick = () => {}, ...props }: IButton) {
-  // Evento de subir na tela
-  const myElementRef = useRef(null);
-  // deno-lint-ignore no-explicit-any
-  const { Up }: any = useScrollEffects({ Up: myElementRef });
+export default function ButtonFade({
+  text,
+  dataSal = 'fade',
+  dataSalDelay = '1000',
+  link,
+  onClick = () => {},
+  tagDataTestid,
+  class: className = '',
+  ...props
+}: IButton) {
+
+  const visible = useBackToTop(tagDataTestid)
   
-  return (
+  return !visible ? null : (
     <button
-      ref={Up}
-      data-sal={dataSal}
       data-sal-delay={dataSalDelay}
+      className={`showInDisplay-transition ${className}`}
       {...props}
       onClick={() => {
         if (link) {

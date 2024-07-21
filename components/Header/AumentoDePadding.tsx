@@ -1,8 +1,11 @@
+import useBackToTop from "site/hooks/useBackToTop.tsx";
 import useVerifyPositionDocument from '../../hooks/useVerifyPositionDocument.tsx'
 
 export default function AumentoDePadding() {
-  const positionDocument = useVerifyPositionDocument(0.1)
+  const positionDocument = useBackToTop('HeaderSection')
 
-  console.log(positionDocument)
-  return <div class={positionDocument ? 'py-2' : ''} />
+  return <div
+    data-testid="HeaderSection"
+    class={positionDocument ? 'h-2' : ''} 
+  />
 }

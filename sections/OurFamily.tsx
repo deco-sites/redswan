@@ -16,13 +16,26 @@ export default function OurFamily({ cta, title, cards }: OurFamilyProps) {
   return (
     <section class="bg-[--background-our-family] text-[--text-our-family] py-[5vmax]">
       <div 
-        class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col gap-4"
+        class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col items-start gap-4 md:gap-8"
         data-testid={'OurFamilySection'}
       >
-        <TextFade text={title} className="" dataSalDelay="1000"  />
-        <ButtonFade text={cta?.text} link={cta?.link} class="" dataSalDelay="1000" />
+        <TextFade
+          text={title}
+          className="font-size-responsive-title"
+          dataSalDelay="1000"
+          tagDataTestid="OurFamilySection"
+        />
+        <ButtonFade
+          text={cta?.text}
+          link={cta?.link}
+          class="bg-[--background-hover-card-our-family] text-[--description-card-our-family]
+          before:hover:bg-[--background-card-our-family] hover:text-[--text-hover-our-family]
+          px-5 py-3 font-bold button-cubic"
+          dataSalDelay="1000"
+          tagDataTestid="OurFamilySection"
+        />
       </div>
-      <div class="lg:container lg:mx-auto mx-4 pt-6">
+      <div class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] pt-6 sm:pt-10 md:pt-16">
         <Cards cards={cards} />
       </div>
     </section>

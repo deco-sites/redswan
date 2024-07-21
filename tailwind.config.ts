@@ -17,6 +17,7 @@ export default {
         '--text-description-who-we-are': '#393939',
         '--background-our-family': '#393939',
         '--text-our-family': '#FFF',
+        '--text-hover-our-family': '#E15545',
         '--background-card-our-family': '#FFF',
         '--background-hover-card-our-family': '#E15545',
         '--title-card-our-family': '#393939',

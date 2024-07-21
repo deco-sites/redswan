@@ -153,3 +153,25 @@
 .replace-title:hover .title-without-hover {
   @apply hidden;
 }
+
+.button-cubic {
+  transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1) color;
+  @apply scale-y-100 relative
+}
+
+.button-cubic::before {
+  content: '';
+  z-index: -1;
+  clip-path: polygon(-2% 102%, 102% 102%, 102% 102%, -2% 102%);
+  transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1) clip-path;
+  transform: translateZ(0);
+  inset: calc(-1 * var(--tertiary-button-stroke));
+  @apply absolute bottom-0 left-0 right-0 top-0 border-2
+}
+
+.button-cubic:hover {
+  @apply opacity-100;
+}
+.button-cubic:hover::before {
+  clip-path: polygon(-2% -2%, 102% -2%, 102% 102%, -2% 102%);
+}

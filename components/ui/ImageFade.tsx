@@ -1,5 +1,6 @@
 import useScrollEffects from "site/hooks/useScrollEffects.tsx";
 import { useRef } from 'preact/hooks'
+import useBackToTop from "site/hooks/useBackToTop.tsx";
 
 export interface ImageFadeProps {
   /** @description option available for animation effect: fade or slide-up */
@@ -12,6 +13,7 @@ export interface ImageFadeProps {
   width?: string
   height?: string
   class?: string
+  tagDataTestid: string
 }
 
 export default function ImageFade({
@@ -22,16 +24,15 @@ export default function ImageFade({
   class: className = '',
   dataSal = 'fade',
   dataSalDelay = '1000',
+  tagDataTestid
 }: ImageFadeProps) {
-  const myElementRef = useRef(null);
-  const { Up } = useScrollEffects({ Up: myElementRef });
+
+  const visible = useBackToTop(tagDataTestid)
   
-  return (
+  return !visible ? null : (
     <div
-      ref={Up}
-      data-sal={dataSal}
       data-sal-delay={dataSalDelay}
-      class="w-full h-full"
+      class="w-full showInDisplay-transition"
     >
       <img 
         src={src}

@@ -23,22 +23,27 @@ export default function Footer2({
 }: Props) {
   return (
     <div class="bg-[--background-footer] text-[--text-footer] py-8">
-      <div class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col gap-4">
+      <div class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col gap-4"
+        data-testid="Footer2Section"
+      >
         <TextFade
           text={title}
           className=""
           dataSalDelay="2000"
+          tagDataTestid="Footer2Section"
         />
         <TextFade
           text={email}
           className=""
           dataSalDelay="2000"
+          tagDataTestid="Footer2Section"
         />
         { !logo?.src ? null : (
           <ImageFade
             src={logo.src}
             alt={logo?.alt ?? 'Logo by redswan'}
             dataSalDelay="2000"
+            tagDataTestid="Footer2Section"
             width="30"
             height="30"
           />

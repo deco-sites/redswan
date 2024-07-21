@@ -14,7 +14,12 @@ export default function TruthTellers({ title }: TruthTellersProps) {
       <div class="w-full 2xl:container 2xl:mx-auto mx-4 lg:px-[3vw]"
         data-testid={'TruthTellersSection'}
       >
-        <TextFade text={title} className="font-size-responsive-title" dataSalDelay="2000" />
+        <TextFade
+          text={title}
+          className="font-size-responsive-title"
+          dataSalDelay="2000"
+          tagDataTestid="TruthTellersSection"
+        />
       </div>
     </section>
   )

@@ -1,7 +1,6 @@
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
-import { useRef } from "preact/hooks";
-import useScrollEffects from "site/hooks/useScrollEffects.tsx";
+import useBackToTop from "site/hooks/useBackToTop.tsx";
 
 export interface TextFadeProps {
   /** @description option available for animation effect: fade or slide-up */
@@ -11,20 +10,25 @@ export interface TextFadeProps {
 
   text: HTML,
   className?: string
+  tagDataTestid: string
 }
 
-export default function TextFade({ text, className = '', dataSal = 'fade', dataSalDelay = '1000' }: TextFadeProps) {
-  // Evento de subir na tela
-  const myElementRef = useRef(null);
-  const { Up } = useScrollEffects({ Up: myElementRef });
+export default function TextFade({
+  text,
+  className = '',
+  dataSal = 'fade',
+  dataSalDelay = '1000',
+  tagDataTestid,
+}: TextFadeProps) {
 
-  return (
+  const visible = useBackToTop(tagDataTestid)
+
+  return !visible ? null : (
     <div
-      ref={Up}
+      data-sal-delay={dataSalDelay}
+      className={"showInDisplay-transition"}
     >
       <HTMLRenderer
-        data-sal={dataSal}
-        data-sal-delay={dataSalDelay}
         html={text}
         class={className}
       />
