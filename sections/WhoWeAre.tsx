@@ -30,13 +30,13 @@ export default function WhoWeAre({ description, subtitle, title }: WhoWeAreProps
         <div class="flex flex-col gap-2 text-[--text-title-who-we-are] font-bold">
           <TextFade
             text={title}
-            className="font-size-responsive-title"
+            className="font-size-responsive-title font-semibold"
             dataSalDelay="1000"
             tagDataTestid="WhoWeAreSection"
           />
           <TextFade
             text={description}
-            className="font-size-responsive-description"
+            className="font-size-responsive-description font-normal"
             dataSalDelay="1000"
             tagDataTestid="WhoWeAreSection"
           />
@@ -44,7 +44,7 @@ export default function WhoWeAre({ description, subtitle, title }: WhoWeAreProps
         <div class="text-[--text-description-who-we-are]">
           <TextFade
             text={subtitle}
-            className="font-size-responsive-subtitle"
+            className="font-size-responsive-subtitle font-normal warnock-pro"
             dataSalDelay="1000"
             tagDataTestid="WhoWeAreSection"
           />

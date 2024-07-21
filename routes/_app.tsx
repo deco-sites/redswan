@@ -37,6 +37,20 @@ export default defineApp(async (_req, ctx) => {
         dangerouslySetInnerHTML={{
           __html: `
             @font-face {
+              font-family: 'warnock-pro';
+              src: url(${asset('/fonts/warnock-pro-i.woff')}) format('woff');
+              font-style: italic;
+              font-weight: 300;
+              font-display: swap;
+            };
+            @font-face {
+              font-family: 'warnock-pro';
+              src: url(${asset('/fonts/warnock-pro.woff')}) format('woff');
+              font-style: normal;
+              font-weight: 300;
+              font-display: swap;
+            };
+            @font-face {
               font-family: 'tablet-gothic';
               src: url(${asset('/fonts/tablet-gothic3.woff')}) format('woff');
               font-style: normal;

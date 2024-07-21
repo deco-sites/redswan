@@ -35,7 +35,8 @@ export default function Card({ logo, description, link, title = '', titleHover, 
       >
         <img src={logo} alt={`logo empresa ${link}`} class="title-without-hover" />
         <p
-          class="description text-[--description-card-our-family] text-[2rem] text-center"
+          style={{ letterSpacing: '1px', lineHeight: '24px' }}
+          class="description text-[--description-card-our-family] text-[21px] md:text-[24px] text-center font-bold"
         >
           {description}
         </p>

@@ -28,13 +28,13 @@ export default function Footer2({
       >
         <TextFade
           text={title}
-          className=""
+          className="text-[40px] font-semibold"
           dataSalDelay="2000"
           tagDataTestid="Footer2Section"
         />
         <TextFade
           text={email}
-          className=""
+          className="warnock-pro"
           dataSalDelay="2000"
           tagDataTestid="Footer2Section"
         />

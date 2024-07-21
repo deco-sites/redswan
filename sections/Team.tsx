@@ -3,18 +3,14 @@ import TextFade from "site/islands/TextFade.tsx";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import ButtonFade from "site/islands/ButtonFade.tsx";
 import ImageFade from "site/islands/ImageFade.tsx";
+import { HTML } from "deco-sites/std/components/types.ts";
 
 export type IFollowing = {
   socialName: string,
   href: string
 }
 
-export type IPeople = {
-  /**
-   * @format rich-text
-   * @default Click here to tweak this text however you want.
-  */
-  infoExtra?: string
+export interface IPeople {
   name: string,
   role: string
   following: IFollowing[]
@@ -25,7 +21,13 @@ export type IPeople = {
 }
 export interface TeamProps {
   title: string,
-  peoples: IPeople[]
+  peoples: Array<IPeople & {
+  /**
+   * @format rich-text
+   * @default Click here to tweak this text however you want.
+  */
+  infoExtra?: HTML
+  }>
 }
 
 export default function Team({ peoples, title }: TeamProps) {
@@ -52,12 +54,12 @@ export default function Team({ peoples, title }: TeamProps) {
               />
               <TextFade
                 text={name}
-                className="text-[--text-red-team] font-size-responsive-subtitle max-w-[150px]"
+                className="text-[--text-red-team] font-size-responsive-subtitle font-bold"
                 tagDataTestid="TeamSection"
               />
               <TextFade
                 text={role}
-                className="text-[--text-dark-team] font-size-responsive-body max-w-[150px]"
+                className="text-[--text-dark-team] font-size-responsive-body warnock-pro font-thin not-italic"
                 tagDataTestid="TeamSection"
               />
               <div class="flex gap-2">
@@ -65,7 +67,7 @@ export default function Team({ peoples, title }: TeamProps) {
                   <>
                     <ButtonFade
                       text={socialName}
-                      class="border-none bg-transparent text-[--text-red-team]"
+                      class="border-none bg-transparent text-[--text-red-team] warnock-pro font-thin not-italic"
                       link={href}
                       dataSalDelay={`${2000 + (60 * index)}`}
                       tagDataTestid="TeamSection"
