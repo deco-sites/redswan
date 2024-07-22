@@ -27,11 +27,12 @@ export default function Card({ logo, description, link, title = '', titleHover, 
   return !visible ? <div /> : (
     <div
       data-sal-delay={parseFloat(dataSalDelay) + (60 * index)}
-      class="showInDisplay-transition"
+      class="showInDisplay-transition tracking-tight"
     >
       <a
         href={link ?? '#'}
-        class="flex flex-col gap-2 items-center justify-center cursor-pointer h-full w-full bg-[--background-card-our-family] hover:bg-[--background-hover-card-our-family] replace-title delay-0"
+        class="flex flex-col gap-2 items-center justify-center cursor-pointer h-full w-full
+        bg-[--background-card-our-family] hover:bg-[--background-hover-card-our-family] replace-title delay-0 px-2"
       >
         <img src={logo} alt={`logo empresa ${link}`} class="title-without-hover" />
         <p
@@ -40,7 +41,7 @@ export default function Card({ logo, description, link, title = '', titleHover, 
         >
           {description}
         </p>
-        <h2 class="title-with-hover text-[--title-card-our-family] leading-[25px]">{titleHover}</h2>
+        <h2 class="title-with-hover text-[--title-card-our-family] leading-[25px] font-semibold">{titleHover}</h2>
       </a>
     </div>
   )

@@ -6,6 +6,6 @@ export default function AumentoDePadding() {
 
   return <div
     data-testid="HeaderSection"
-    class={positionDocument ? 'h-2' : ''} 
+    class={positionDocument ? 'h-2 w-full' : ''} 
   />
 }

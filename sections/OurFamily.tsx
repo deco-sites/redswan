@@ -16,12 +16,12 @@ export default function OurFamily({ cta, title, cards }: OurFamilyProps) {
   return (
     <section class="bg-[--background-our-family] text-[--text-our-family] py-[5vmax]">
       <div 
-        class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col items-start gap-4 md:gap-8"
+        class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col items-start gap-4 md:gap-8 spacing-1px"
         data-testid={'OurFamilySection'}
       >
         <TextFade
           text={title}
-          className="font-size-responsive-title"
+          className="font-size-responsive-title font-semibold"
           dataSalDelay="1000"
           tagDataTestid="OurFamilySection"
         />

@@ -2,6 +2,8 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../ui/Icon.tsx";
 import { JSX } from "preact/jsx-runtime";
+import ButtonFade from "site/islands/ButtonFade.tsx";
+import LinkClient from "site/islands/LinkClient.tsx";
 
 export interface HeaderProps {
   logo?: {
@@ -33,7 +35,9 @@ export default function Header({
   children
 }: HeaderProps) {
   return (
-    <header class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] fixed w-full z-30">
+    <>
+    <div class="h-[70px] md:h-[0px]" />
+    <header class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] fixed top-0 w-full z-30">
       {children}
       <div class="flex justify-between 2xl:container 2xl:mx-auto mx-4 py-8 lg:px-[3vw]">
         <div class="showInDisplay-transition">
@@ -44,7 +48,7 @@ export default function Header({
         <div class="drawer drawer-end md:hidden">
           <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
           {/* main content */}
-          <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
+          <div class="drawer-content container lg:px-0 md:px-4 flex gap-8 items-center justify-between py-4 w-[50px] md:w-auto">
             <label
               htmlFor="mobile-drawer-nav"
               class="flex md:hidden btn btn-ghost drawer-button"
@@ -84,22 +88,22 @@ export default function Header({
             </div>
           </aside>
         </div>
-        <div class="hidden items-center justify-between md:flex">
-          <ul class="flex">
+        <div class="hidden items-center justify-between md:flex pt-4">
+          <ul class="flex gap-8">
             {navigation.links.map((link) => (
               <li>
-                <a
-                  href={link.url}
-                  aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
-                >
-                  {link.label}
-                </a>
+                <LinkClient 
+                  text={link.label ?? ''}
+                  class="element no-underline pt-4 font-semibold"
+                  url={link.url ?? ''}
+                  insertClass='retrair-para-direita'
+                />
               </li>
             ))}
           </ul>
         </div>
       </div>
     </header>
+    </>
   );
 }

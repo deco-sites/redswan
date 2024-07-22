@@ -14,6 +14,7 @@ export type IButton = {
   onClick?: () => void
   link?: string
   tagDataTestid: string
+  onMouseLeave?: () => void
 }
 
 export default function ButtonFade({

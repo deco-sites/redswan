@@ -65,7 +65,7 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="inline-block font-size-responsive-title font-normal"
+              class="inline-block font-size-responsive-title font-semibold spacing-1px"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
