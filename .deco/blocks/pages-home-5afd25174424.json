@@ -7,7 +7,7 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Since 2011, Red Swan Ventures has worked with <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\">magnetic</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\">authentic</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"\">tenacious</a>, and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/\">evolving </a>founders to build great companies. 💫</p>",
+      "title": "<p>Since 2011, Red Swan Ventures has worked with <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"evento_de_borda_corra\" href=\"/\">magnetic</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"evento_de_borda_corra\" href=\"/\">authentic</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"evento_de_borda_corra\" href=\"\">tenacious</a>, and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"evento_de_borda_corra\" href=\"/\">evolving </a>founders to build great companies. 💫</p>",
       "cta": []
     },
     {

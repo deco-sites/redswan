@@ -11,6 +11,10 @@ export interface TextFadeProps {
   text: HTML,
   className?: string
   tagDataTestid: string
+  event?: {
+    status: boolean,
+    class: string
+  }
 }
 
 export default function TextFade({
@@ -19,14 +23,24 @@ export default function TextFade({
   dataSal = 'fade',
   dataSalDelay = '1000',
   tagDataTestid,
+  event = { status: false, class: '' }
 }: TextFadeProps) {
 
   const visible = useBackToTop(tagDataTestid)
 
   return !visible ? null : (
     <div
+      role='button'
       data-sal-delay={dataSalDelay}
       className={"showInDisplay-transition"}
+      onMouseLeave={(e: any) => {
+        if (event?.status) {
+          e.target.classList.add(event?.class)
+          setTimeout(() => {
+            e.target.classList.remove(event?.class)
+          }, 450)
+        }
+      }}
     >
       <HTMLRenderer
         html={text}

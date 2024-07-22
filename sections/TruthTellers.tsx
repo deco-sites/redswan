@@ -16,9 +16,13 @@ export default function TruthTellers({ title }: TruthTellersProps) {
       >
         <TextFade
           text={title}
-          className="font-semibold font-size-responsive-principal -spacing-2px w-[80%]"
+          className="font-semibold font-size-responsive-principal -spacing-2px md:w-[80%]"
           dataSalDelay="2000"
           tagDataTestid="TruthTellersSection"
+          event={{
+            status: true,
+            class: 'retrair-para-direita-container'
+          }}
         />
       </div>
     </section>

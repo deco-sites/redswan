@@ -33,7 +33,7 @@ export interface TeamProps {
 export default function Team({ peoples, title }: TeamProps) {
   return (
     <section class="bg-[#FFF] py-[5vmax]">
-      <div class="w-full 2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col gap-4 md:gap-8 lg:gap-12"
+      <div class="w-full 2xl:container 2xl:mx-auto lg:px-[3vw] flex flex-col gap-4 md:gap-8 lg:gap-12"
         data-testid={'TeamSection'}
       >
         <TextFade
@@ -42,9 +42,9 @@ export default function Team({ peoples, title }: TeamProps) {
           dataSalDelay="2000"
           tagDataTestid="TeamSection"
         />
-        <div class='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+        <div class='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
           { peoples.map(({ imagePeople, following, infoExtra, name, role }, index) => (
-            <div class="flex flex-col gap-4 items-center">
+            <div class="flex flex-col gap-4 items-center px-2 md:px-0">
               <ImageFade
                 src={imagePeople?.src}
                 alt={imagePeople?.alt}

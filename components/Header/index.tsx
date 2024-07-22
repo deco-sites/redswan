@@ -39,13 +39,13 @@ export default function Header({
     <div class="h-[70px] md:h-[0px]" />
     <header class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] fixed top-0 w-full z-30">
       {children}
-      <div class="flex justify-between 2xl:container 2xl:mx-auto mx-4 py-8 lg:px-[3vw]">
+      <div class="flex justify-between 2xl:container 2xl:mx-auto px-2 md:mx-4 py-8 lg:px-[3vw]">
         <div class="showInDisplay-transition">
           <a href="/" data-event='no effect'>
             <Image src={logo.src || ""} width={154} height={44} alt={logo.alt} />
           </a>
         </div>
-        <div class="drawer drawer-end md:hidden">
+        <div class="drawer drawer-end w-[60px] md:hidden">
           <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
           {/* main content */}
           <div class="drawer-content container lg:px-0 md:px-4 flex gap-8 items-center justify-between py-4 w-[50px] md:w-auto">
@@ -94,7 +94,7 @@ export default function Header({
               <li>
                 <LinkClient 
                   text={link.label ?? ''}
-                  class="element no-underline pt-4 font-semibold"
+                  class="evento_de_borda_corra no-underline pt-4 font-semibold"
                   url={link.url ?? ''}
                   insertClass='retrair-para-direita'
                 />
