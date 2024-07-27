@@ -6,8 +6,9 @@
 
   /* Allow changing font family via CMS */
   html {
-    font-family: 'tablet-gothic', 'tablet-gothic-condensed', var(--font-family);
     font-display: swap;
+    font-family: 'tablet-gothic'
+    /* 'tablet-gothic', 'tablet-gothic-condensed', var(--font-family); */
   }
 
   .warnock-pro {
@@ -261,4 +262,61 @@
   stroke: #FFF;
   fill: #FFF;
   color: #FFF;
+}
+
+.border-bottom-svg {
+  min-width: 200px;
+  text-decoration: none !important;
+  background-image: none !important;
+  background-repeat: no-repeat;
+  /* background-color: #FFF; */
+  background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+  background-size: 50% 1px, 50% 1px;
+  background-position: 0% bottom, 100% bottom;
+  padding: 2px;
+  animation: border-bottom-de-correr 0.6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-direction: reverse;
+  @apply opacity-100 text-left relative inline
+}
+
+
+@keyframes border-bottom-de-correr {
+  0% {
+    background-position: 0% bottom, 100% bottom;
+  }
+
+  100% {
+    background-position: 200% bottom, 300% bottom;
+  }
+}
+
+.button-stroke {
+  display: block;
+  width: calc(97%);
+  height: 30px;
+  stroke: #e25545;
+  fill: #e25545;
+  color: #e25545;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  stroke-width: 2;
+  z-index: 1;
+  text-align: left;
+  overflow-clip-margin: content-box;
+}
+
+.button-stroke-2 {
+  stroke-dasharray: 700px;
+  stroke-dashoffset: 700px;
+  stroke: #fff;
+  fill: #fff;
+  color: #fff;
+  stroke-width: 2;
+  transition: stroke-dashoffset 500ms ease-out;
+  animation-direction: reverse;
+}
+
+.border-bottom-svg:hover .button-stroke-2 {
+  stroke-dashoffset: 1;
 }

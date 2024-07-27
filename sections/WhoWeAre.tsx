@@ -27,7 +27,7 @@ export default function WhoWeAre({ description, subtitle, title }: WhoWeAreProps
         class="flex flex-col md:flex-row justify-between gap-10 2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] tracking-tight"
         data-testid={'WhoWeAreSection'}
       >
-        <div class="flex flex-col gap-2 text-[--text-title-who-we-are] font-bold shrink-[7]">
+        <div class="flex flex-col gap-2 md:gap-6 text-[--text-title-who-we-are] font-bold shrink-[7]">
           <TextFade
             text={title}
             className="font-size-responsive-title font-semibold -spacing-2px"
@@ -36,7 +36,7 @@ export default function WhoWeAre({ description, subtitle, title }: WhoWeAreProps
           />
           <TextFade
             text={description}
-            className="font-size-responsive-description font-semibold"
+            className="font-size-responsive-description space-y-4 font-semibold"
             dataSalDelay="1000"
             tagDataTestid="WhoWeAreSection"
           />
@@ -44,7 +44,7 @@ export default function WhoWeAre({ description, subtitle, title }: WhoWeAreProps
         <div class="text-[--text-description-who-we-are] shrink-[8]">
           <TextFade
             text={subtitle}
-            className="font-size-responsive-subtitle font-normal warnock-pro"
+            className="font-size-responsive-subtitle font-normal space-y-4"
             dataSalDelay="1000"
             tagDataTestid="WhoWeAreSection"
           />

@@ -38,40 +38,98 @@ export default defineApp(async (_req, ctx) => {
           __html: `
             @font-face {
               font-family: 'warnock-pro';
-              src: url(${asset('/fonts/warnock-pro-i.woff')}) format('woff');
-              font-style: italic;
-              font-weight: 300;
-              font-display: swap;
-            };
-            @font-face {
-              font-family: 'warnock-pro';
               src: url(${asset('/fonts/warnock-pro.woff')}) format('woff');
               font-style: normal;
               font-weight: 300;
               font-display: swap;
             };
             @font-face {
-              font-family: 'tablet-gothic';
-              src: url(${asset('/fonts/tablet-gothic3.woff')}) format('woff');
-              font-style: normal;
-              font-weight: 400;
+              font-family: 'warnock-pro';
+              src: url(${asset('/fonts/warnock-pro-i.woff')}) format('woff');
+              font-style: italic;
+              font-weight: 300;
               font-display: swap;
             };
             @font-face {
-              font-family: 'tablet-gothic';
-              src: url(${asset('/fonts/tablet-gothic2.woff')}) format('woff');
-              font-style: normal;
-              font-weight: 600;
-              font-display: swap;
-            };
-            @font-face {
-              font-family: 'tablet-gothic';
-              src: url(${asset('/fonts/tablet-gothic.woff')}) format('woff'), url(${asset('/fonts/tablet-gothic2.woff')}) format('woff');
-              font-style: normal;
+              font-family: tablet-gothic-condensed;
+              src: url(https://use.typekit.net/af/e6a1d5/00000000000000007735a1ee/30/d?subset_id=2&fvd=n7&v=3) format("woff");
               font-weight: 700;
-              font-display: swap;
-            };
+              font-style: normal;
+              font-stretch: normal;
+              font-display: auto;
+            }
 
+            @font-face {
+              font-family: tablet-gothic-condensed;
+              src: url(https://use.typekit.net/af/7f85e2/00000000000000007735a1f3/30/d?subset_id=2&fvd=n8&v=3) format("woff");
+              font-weight: 800;
+              font-style: normal;
+              font-stretch: normal;
+              font-display: auto;
+            }
+
+            @font-face {
+              font-family: tablet-gothic-condensed;
+              src: url(https://use.typekit.net/af/b684d7/00000000000000007735a217/30/d?subset_id=2&fvd=i7&v=3) format("woff");
+              font-weight: 700;
+              font-style: italic;
+              font-stretch: normal;
+              font-display: auto;
+            }
+
+            @font-face {
+              font-family: tablet-gothic-condensed;
+              src: url(https://use.typekit.net/af/4e719b/00000000000000007735a21a/30/d?subset_id=2&fvd=i8&v=3) format("woff");
+              font-weight: 800;
+              font-style: italic;
+              font-stretch: normal;
+              font-display: auto;
+            }
+
+            @font-face {
+              font-family: tablet-gothic;
+              src: url(${asset('/fonts/tablet-gothic3.woff')}) format("woff");
+              font-weight: 400;
+              font-style: normal;
+              font-stretch: normal;
+              font-display: auto;
+            }
+
+            @font-face {
+              font-family: tablet-gothic;
+              src: url(${asset('/fonts/tablet-gothic2.woff')}) format("woff");
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              font-display: auto;
+            }
+
+            @font-face {
+              font-family: tablet-gothic;
+              src: url(${asset('/fonts/tablet-gothic.woff')}) format("woff");
+              font-weight: 700;
+              font-style: normal;
+              font-stretch: normal;
+              font-display: auto;
+            }
+
+            @font-face {
+              font-family: tablet-gothic;
+              src: url(${asset('/fonts/tablet-gothic2-i.woff')}) format("woff");
+              font-weight: 600;
+              font-style: italic;
+              font-stretch: normal;
+              font-display: auto;
+            }
+
+            @font-face {
+              font-family: tablet-gothic;
+              src: url(https://use.typekit.net/af/f4ca7b/00000000000000007735a204/30/l?subset_id=2&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/f4ca7b/00000000000000007735a204/30/d?subset_id=2&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/f4ca7b/00000000000000007735a204/30/a?subset_id=2&fvd=i7&v=3) format("opentype");
+              font-weight: 700;
+              font-style: italic;
+              font-stretch: normal;
+              font-display: auto;
+            }
 
             @font-face {
               font-family: 'tablet-gothic-condensed';
