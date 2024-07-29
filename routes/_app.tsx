@@ -42,6 +42,7 @@ export default defineApp(async (_req, ctx) => {
               font-style: normal;
               font-weight: 300;
               font-display: swap;
+              font-stretch: normal;
             };
             @font-face {
               font-family: 'warnock-pro';
@@ -49,6 +50,7 @@ export default defineApp(async (_req, ctx) => {
               font-style: italic;
               font-weight: 300;
               font-display: swap;
+              font-stretch: normal;
             };
             @font-face {
               font-family: tablet-gothic-condensed;
@@ -136,6 +138,7 @@ export default defineApp(async (_req, ctx) => {
               font-style: normal;
               font-weight: 400, 600, 700;
               font-display: swap;
+              font-stretch: normal;
               src: url(${asset("/fonts/tablet-gothic-condensed2.woff")}) format('woff');
             };
 
@@ -144,6 +147,7 @@ export default defineApp(async (_req, ctx) => {
               font-style: normal;
               font-weight: 800;
               font-display: swap;
+              font-stretch: normal;
               src: url(${asset("/fonts/tablet-gothic-condensed.woff")}) format('woff');
             };
           `

@@ -30,19 +30,25 @@ export default function ButtonFade({
 
   const visible = useBackToTop(tagDataTestid)
   
-  return !visible ? null : (
-    <button
-      data-sal-delay={dataSalDelay}
-      className={`showInDisplay-transition ${className}`}
-      {...props}
-      onClick={() => {
-        if (link) {
-          window.location.href = link
-        }
-        onClick()
-      }}
+  return (
+    <div
+      style={{ transitionDelay: dataSalDelay + 'ms' }}
+      class={`opacityEvent ${!visible ? '' : 'show'}`}
     >
-      {text}
-    </button>
+      { !visible ? null : (
+        <button
+          className={`showInDisplay-transition ${className}`}
+          {...props}
+          onClick={() => {
+            if (link) {
+              window.location.href = link
+            }
+            onClick()
+          }}
+        >
+          {text}
+        </button>
+      )}
+    </div>
   )
 }

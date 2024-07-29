@@ -18,7 +18,7 @@ export default function TruthTellers({ title }: TruthTellersProps) {
           text={title}
           className="font-semibold font-size-responsive-principal -spacing-2px w-full md:w-[80%]"
           classNameContainer="w-full"
-          dataSalDelay="2000"
+          dataSalDelay="700"
           tagDataTestid="TruthTellersSection"
           event={{
             status: true,

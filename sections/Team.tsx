@@ -39,7 +39,7 @@ export default function Team({ peoples, title }: TeamProps) {
         <TextFade
           text={title}
           className="font-size-responsive-title text-[--text-red-team]"
-          dataSalDelay="2000"
+          dataSalDelay="700"
           tagDataTestid="TeamSection"
         />
         <div class='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
@@ -48,7 +48,7 @@ export default function Team({ peoples, title }: TeamProps) {
               <ImageFade
                 src={imagePeople?.src}
                 alt={imagePeople?.alt}
-                dataSalDelay={`${2000 + (60 * index)}`}
+                dataSalDelay={`${700 + (100 * index)}`}
                 class="px-4 pb-4 rounded-full"
                 tagDataTestid="TeamSection"
               />
@@ -67,9 +67,9 @@ export default function Team({ peoples, title }: TeamProps) {
                   <>
                     <ButtonFade
                       text={socialName}
-                      class="border-none bg-transparent text-[--text-red-team] warnock-pro font-thin not-italic"
+                      class="border-none bg-transparent text-[--text-red-team] warnock-pro font-size-responsive-body font-thin not-italic"
                       link={href}
-                      dataSalDelay={`${2000 + (60 * index)}`}
+                      dataSalDelay={`${700 + (100 * index)}`}
                       tagDataTestid="TeamSection"
                     />
                     { indexFollowing < following.length -1 ? (
@@ -79,11 +79,18 @@ export default function Team({ peoples, title }: TeamProps) {
                 ))}
               </div>
               { !infoExtra ? null : (
-                <div class="font-semibold warnock-pro">
-                  <HTMLRenderer 
-                    html={infoExtra}
+                  <TextFade
+                    text={infoExtra}
+                    className={`text-[--text-dark-team] font-size-responsive-body warnock-pro font-thin not-italic text-center
+                      font-semibold warnock-pro font-size-responsive-body font-thin`}
+                    tagDataTestid="TeamSection"
+                    dataSalDelay={`${700 + (100 * index)}`}
                   />
-                </div>
+                // <div class="font-semibold warnock-pro font-size-responsive-body font-thin">
+                //   <HTMLRenderer 
+                //     html={infoExtra}
+                //   />
+                // </div>
               ) }
             </div>
           )) }

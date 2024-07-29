@@ -29,20 +29,20 @@ export default function Footer2({
         <TextFade
           text={title}
           className="text-[40px] font-semibold"
-          dataSalDelay="2000"
+          dataSalDelay="700"
           tagDataTestid="Footer2Section"
         />
         <TextFade
           text={email}
           className="warnock-pro"
-          dataSalDelay="2000"
+          dataSalDelay="700"
           tagDataTestid="Footer2Section"
         />
         { !logo?.src ? null : (
           <ImageFade
             src={logo.src}
             alt={logo?.alt ?? 'Logo by redswan'}
-            dataSalDelay="2000"
+            dataSalDelay="700"
             tagDataTestid="Footer2Section"
             width="30"
             height="30"

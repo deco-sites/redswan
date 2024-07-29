@@ -22,7 +22,7 @@ export default function OurFamily({ cta, title, cards }: OurFamilyProps) {
         <TextFade
           text={title}
           className="font-size-responsive-title font-semibold"
-          dataSalDelay="1000"
+          dataSalDelay="700"
           tagDataTestid="OurFamilySection"
         />
         <ButtonFade
@@ -31,7 +31,7 @@ export default function OurFamily({ cta, title, cards }: OurFamilyProps) {
           class="bg-[--background-hover-card-our-family] text-[--description-card-our-family]
           before:hover:bg-[--background-card-our-family] hover:text-[--text-hover-our-family]
           px-5 py-3 font-bold button-cubic"
-          dataSalDelay="1000"
+          dataSalDelay="700"
           tagDataTestid="OurFamilySection"
         />
       </div>

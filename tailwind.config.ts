@@ -12,7 +12,7 @@ export default {
         '--background-section-truth-tellers': '#E15545',
         '--text-truth-tellers-marked': '#393939',
         '--text-truth-tellers': '#FFF',
-        '--background-who-we-are': '#FFF',
+        '--background-who-we-are': '#F3F3F3',
         '--text-title-who-we-are': '#E15545',
         '--text-description-who-we-are': '#393939',
         '--background-our-family': '#393939',

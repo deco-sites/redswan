@@ -29,18 +29,20 @@ export default function ImageFade({
 
   const visible = useBackToTop(tagDataTestid)
   
-  return !visible ? null : (
+  return (
     <div
-      data-sal-delay={dataSalDelay}
-      class="w-full showInDisplay-transition"
+      style={{ transitionDelay: dataSalDelay + 'ms' }}
+      class={`w-full opacityEvent ${!visible ? '' : 'show'}`}
     >
-      <img 
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        class={className}
-      />
+      { !visible ? null : (
+        <img 
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          class={className}
+        />
+      ) }
     </div>
   )
 }

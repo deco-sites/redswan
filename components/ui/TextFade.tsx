@@ -1,6 +1,8 @@
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import useBackToTop from "site/hooks/useBackToTop.tsx";
+import { useRef } from 'preact/hooks'
+import useScrollEffects from "site/hooks/useScrollEffects.tsx";
 
 export interface TextFadeProps {
   /** @description option available for animation effect: fade or slide-up */
@@ -30,11 +32,11 @@ export default function TextFade({
 
   const visible = useBackToTop(tagDataTestid)
 
-  return !visible ? null : (
+  return (
     <div
       role='button'
-      data-sal-delay={dataSalDelay}
-      className={`showInDisplay-transition ${classNameContainer}`}
+      style={{ transitionDelay: dataSalDelay + 'ms' }}
+      className={`opacityEvent ${!visible ? '' : 'show'} ${classNameContainer}`}
       onMouseLeave={(e: any) => {
         if (event?.status) {
           e.target.classList.add(event?.class)
@@ -44,10 +46,12 @@ export default function TextFade({
         }
       }}
     >
-      <HTMLRenderer
-        html={text}
-        class={className}
-      />
+      { !visible ? null : (
+        <HTMLRenderer
+          html={text}
+          class={className}
+        />
+      )}
     </div>
   )
 }
