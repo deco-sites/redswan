@@ -24,7 +24,7 @@ export default function WhoWeAre({ description, subtitle, title }: WhoWeAreProps
   return (
     <section class="bg-[--background-who-we-are] py-[10vmax]">
       <div
-        class="flex flex-col md:flex-row justify-between gap-10 2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] tracking-tight"
+        class="flex flex-col md:flex-row justify-between gap-10 2xl:container 2xl:mx-auto mx-4 px-4 lg:px-[3vw] tracking-tight"
         data-testid={'WhoWeAreSection'}
       >
         <div class="flex flex-col gap-2 md:gap-6 text-[--text-title-who-we-are] font-bold shrink-[7]">

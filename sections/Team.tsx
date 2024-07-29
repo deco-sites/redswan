@@ -33,7 +33,7 @@ export interface TeamProps {
 export default function Team({ peoples, title }: TeamProps) {
   return (
     <section class="bg-[#FFF] py-[5vmax]">
-      <div class="w-full 2xl:container 2xl:mx-auto lg:px-[3vw] flex flex-col gap-4 md:gap-8 lg:gap-12"
+      <div class="w-full 2xl:container 2xl:mx-auto px-4 lg:px-[3vw] flex flex-col gap-4 md:gap-8 lg:gap-12"
         data-testid={'TeamSection'}
       >
         <TextFade
@@ -59,7 +59,7 @@ export default function Team({ peoples, title }: TeamProps) {
               />
               <TextFade
                 text={role}
-                className="text-[--text-dark-team] font-size-responsive-body warnock-pro font-thin not-italic"
+                className="text-[--text-dark-team] font-size-responsive-body warnock-pro font-thin not-italic text-center"
                 tagDataTestid="TeamSection"
               />
               <div class="flex gap-2">
@@ -79,9 +79,11 @@ export default function Team({ peoples, title }: TeamProps) {
                 ))}
               </div>
               { !infoExtra ? null : (
-                <HTMLRenderer 
-                  html={infoExtra}
-                />
+                <div class="font-semibold warnock-pro">
+                  <HTMLRenderer 
+                    html={infoExtra}
+                  />
+                </div>
               ) }
             </div>
           )) }

@@ -37,9 +37,11 @@ export default function Header({
   return (
     <>
     <div class="h-[70px] md:h-[0px]" />
-    <header class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] fixed top-0 w-full z-30">
+    <header
+      class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] fixed top-0 w-full z-30"
+    >
       {children}
-      <div class="flex justify-between 2xl:container 2xl:mx-auto px-2 md:mx-4 py-8 lg:px-[3vw]">
+      <div class="flex justify-between 2xl:container 2xl:mx-auto px-2 md:mx-4 py-8 px-4 lg:px-[3vw]">
         <div class="showInDisplay-transition">
           <a href="/" data-event='no effect'>
             <Image src={logo.src || ""} width={154} height={44} alt={logo.alt} />

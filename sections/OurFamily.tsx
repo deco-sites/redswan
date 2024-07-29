@@ -16,7 +16,7 @@ export default function OurFamily({ cta, title, cards }: OurFamilyProps) {
   return (
     <section class="bg-[--background-our-family] text-[--text-our-family] py-[5vmax]">
       <div 
-        class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] flex flex-col items-start gap-4 md:gap-8 spacing-1px"
+        class="2xl:container 2xl:mx-auto mx-4 px-4 lg:px-[3vw] flex flex-col items-start gap-4 md:gap-8 spacing-1px"
         data-testid={'OurFamilySection'}
       >
         <TextFade
@@ -35,7 +35,7 @@ export default function OurFamily({ cta, title, cards }: OurFamilyProps) {
           tagDataTestid="OurFamilySection"
         />
       </div>
-      <div class="2xl:container 2xl:mx-auto mx-4 lg:px-[3vw] pt-6 sm:pt-10 md:pt-16">
+      <div class="2xl:container 2xl:mx-auto mx-4 px-4 lg:px-[3vw] pt-6 sm:pt-10 md:pt-16">
         <Cards cards={cards} />
       </div>
     </section>
