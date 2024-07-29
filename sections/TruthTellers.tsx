@@ -17,7 +17,7 @@ export default function TruthTellers({ title }: TruthTellersProps) {
         <TextFade
           text={title}
           className="font-semibold font-size-responsive-principal -spacing-2px w-full md:w-[80%]"
-          classNameContainer="w-full md:w-[80%]"
+          classNameContainer="w-full"
           dataSalDelay="2000"
           tagDataTestid="TruthTellersSection"
           event={{
