@@ -68,7 +68,7 @@ export default function Header({
               class="drawer-overlay"
             />
 
-            <div class="flex flex-col gap-8 min-h-full w-80 bg-base-100 text-base-content">
+            <div class="flex flex-col gap-8 min-h-full w-80 bg-[--background-footer] text-[--text-footer]">
               <a class="p-4" href="/">
                 <Image
                   src={logo.src || ""}
@@ -78,7 +78,7 @@ export default function Header({
                 />
               </a>
 
-              <ul class="menu">
+              <ul class="menu text-[30px]">
                 {navigation?.links.map((link) => (
                   <li>
                     <a href={link.url} aria-label={link.label}>
