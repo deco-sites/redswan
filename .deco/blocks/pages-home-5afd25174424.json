@@ -217,6 +217,16 @@
       },
       "title": "Get in Touch",
       "email": "hi@redswanventures.com"
+    },
+    {
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "description": "Since 2011, Red Swan Ventures has worked with magnetic, authentic, tenacious, and evolving founders to build great companies.",
+      "titleTemplate": "Red Swam Ventures | %s",
+      "title": "Red Swan Ventures",
+      "descriptionTemplate": "Red Swan Ventures | %s",
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/cb87bcc9-1a24-4def-ad99-d22e877a05c8",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11902/637e4658-094c-4ca6-a0c9-a7e7463cb21a"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
