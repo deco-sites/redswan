@@ -11,6 +11,14 @@ function useBackToTop(elementDataTestid: string) {
         const windowHeight = window.innerHeight;
         const elementInDocument = document.querySelector(`div[data-testid=${elementDataTestid}]`) as HTMLElement
         const positionToAppear = elementInDocument.offsetTop;
+
+        if (elementDataTestid === 'HeaderSection') {
+          console.log({
+            clientScroll: scrollY + windowHeight,
+            elementInDocument,
+            positionToAppear
+          })
+        }
   
         if (scrollY + windowHeight < positionToAppear) {
           setIsVisible(scrollY + windowHeight >= positionToAppear);

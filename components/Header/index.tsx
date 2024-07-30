@@ -40,6 +40,7 @@ export default function Header({
       <header
         class="tweak-global-animations-animation-type-flex bg-[--background-header] text-[--text-header] fixed top-0 w-full z-30"
       >
+        {children}
         <div class="flex justify-between 2xl:container 2xl:mx-auto px-2 md:mx-4 py-8 px-4 lg:px-[3vw]">
           <div class="opacity-transition showInDisplay-transition">
             <a href="/" data-event='no effect'>
@@ -104,7 +105,6 @@ export default function Header({
             </ul>
           </div>
         </div>
-        {children}
       </header>
     </>
   );
