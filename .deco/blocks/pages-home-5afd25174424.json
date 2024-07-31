@@ -221,7 +221,7 @@
     {
       "__resolveType": "website/sections/Seo/Seo.tsx",
       "description": "Since 2011, Red Swan Ventures has worked with magnetic, authentic, tenacious, and evolving founders to build great companies.",
-      "titleTemplate": "Red Swam Ventures | %s",
+      "titleTemplate": "Red Swan Ventures | %s",
       "title": "Red Swan Ventures",
       "descriptionTemplate": "Red Swan Ventures | %s",
       "type": "website",
